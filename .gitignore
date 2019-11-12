@@ -184,3 +184,4 @@ tags
 .history
 
 # End of https://www.gitignore.io/api/go,vim,linux,macos,jetbrains,visualstudiocode
+/.idea/
