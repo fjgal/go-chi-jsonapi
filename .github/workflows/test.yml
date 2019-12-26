@@ -16,13 +16,6 @@ jobs:
         with:
           go-version: ${{ matrix.go-version }}
 
-      - uses: actions/cache@v1 # enable go module cache
-        with:
-          path: ~/go/pkg/mod
-          key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum') }}
-          restore-keys: |
-            ${{ runner.os }}-go-
-
       - name: Checkout code
         uses: actions/checkout@v1
 
